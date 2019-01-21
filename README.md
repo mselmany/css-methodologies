@@ -47,21 +47,21 @@ Kod örneği;
 ```css
 /*symbol-search componenti*/
 .symbol-search {
-} // block
+} /*block*/
 .symbol-search__input {
-} // element
+} /*element*/
 .symbol-search__button-container {
-} // element
+} /*element*/
 .symbol-search_compact {
-} // modifier
+} /*modifier*/
 
 /*button componenti*/
 .button {
-} // block
+} /*block*/
 .button_full-width {
-} // modifier
+} /*modifier*/
 .button_ligth {
-} // modifier
+} /*modifier*/
 ```
 
 ```html
