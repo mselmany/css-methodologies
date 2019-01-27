@@ -1,0 +1,26 @@
+:root {
+  /* --DefaultBackgroundColor: #f9fafb; */
+  --DefaultBackgroundColor: #f1fdff;
+  --DefaultColor: #121212;
+  --DefaultLinkColor: #3c6dff;
+  --DefaultBorderColor: color(var(--DefaultColor) a(5%));
+  --DefaultFontFamily: "Barlow", "Barlow Condensed", "Rubik", "Chivo",
+    "Barlow Semi Condensed", "Work Sans", "Karla", "Playfair Display", system-ui;
+  --DefaultTransition: 0.3s;
+  /* --DefaultBoxShadow: 0 1px 1px #ccc, 0 1px 3px #ddd; */
+  --DefaultBoxShadow: rgba(0, 0, 0, 0.25) 0 4px 8px -4px,
+    rgba(0, 0, 0, 0.25) 0 0 1px;
+  --DefaultBorderRadius: 0.2rem;
+}
+
+.SymbolSearch {
+  --SymbolSearch_BackgroundColor: #f9f9f9;
+  --SymbolSearch_BackgroundColor--Hover: #f5f5f5;
+  --SymbolSearch_BackgroundColor--Active: #f0f0f0;
+  --SymbolSearch_BackgroundColor--Selected: #e8e8e8;
+  --SymbolSearch_BackgroundColor--Selected-Text: "Gösteriliyor";
+
+  .SymbolDetails__SymbolSearch--secondary & {
+    --SymbolSearch_BackgroundColor: #ddd;
+  }
+}

@@ -1,0 +1,107 @@
+.SymbolSearch {
+  /* --SymbolSearch_BackgroundColor: #f9f9f9;
+  --SymbolSearch_BackgroundColor--Hover: #f5f5f5;
+  --SymbolSearch_BackgroundColor--Active: #f0f0f0;
+  --SymbolSearch_BackgroundColor--Selected: #e8e8e8;
+  --SymbolSearch_BackgroundColor--Selected-Text: "Gösteriliyor"; */
+
+  width: 100%;
+  position: relative;
+  font-size: 0.75rem;
+  user-select: none;
+
+  &__Input {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    line-height: 1rem;
+    font-size: inherit;
+    border-radius: var(--DefaultBorderRadius);
+    text-transform: uppercase;
+    border: 1px solid var(--SymbolSearch_BackgroundColor);
+    background-color: var(--SymbolSearch_BackgroundColor);
+
+    &:hover {
+      background-color: var(--SymbolSearch_BackgroundColor--Hover);
+      border: 1px solid var(--SymbolSearch_BackgroundColor--Hover);
+    }
+    &:focus,
+    &:active {
+      background-color: var(--SymbolSearch_BackgroundColor--Active);
+      border: 1px solid var(--SymbolSearch_BackgroundColor--Active);
+    }
+  }
+
+  &__List {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: auto;
+    z-index: 2;
+    border-radius: var(--DefaultBorderRadius);
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: var(--DefaultBoxShadow);
+    background-color: var(--SymbolSearch_BackgroundColor);
+
+    &Item {
+      width: 100%;
+      padding: 0.5rem;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        display: none;
+
+        content: var(--SymbolSearch_BackgroundColor--Selected-Text);
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 0.025rem;
+      }
+
+      &:not(&--selected):hover {
+        background-color: var(--SymbolSearch_BackgroundColor--Active);
+      }
+
+      &--selected {
+        background-color: var(--SymbolSearch_BackgroundColor--Selected);
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__Name {
+    display: block;
+  }
+
+  &__Description {
+    display: block;
+    opacity: 0.5;
+  }
+
+  &__Input:focus + label &__List,
+  &__Input:active + label &__List,
+  &--JS_FOCUSED label &__List {
+    height: 11rem;
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,13 @@
+html {
+  width: 100%;
+  background-color: var(--DefaultBackgroundColor);
+  color: var(--DefaultColor);
+  font-family: var(--DefaultFontFamily);
+  font-size: 16px;
+  font-size: responsive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}

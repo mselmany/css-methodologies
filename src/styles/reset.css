@@ -1,0 +1,36 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-kerning: auto;
+}
+
+button {
+  background: inherit;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.StyledLink a[href] {
+  color: var(--DefaultLinkColor);
+  text-decoration: none;
+  &::after {
+    content: " êœ›";
+  }
+  &:hover {
+    text-decoration: underline;
+    &::after {
+      content: " êœœ";
+    }
+  }
+}

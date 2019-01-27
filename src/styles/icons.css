@@ -1,0 +1,27 @@
+.Icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  background-size: contain;
+  &--interactive {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &--white {
+    filter: brightness(0) invert(1);
+  }
+  &--black {
+    filter: brightness(0) invert(0);
+  }
+  &--close {
+    background-image: url("../assets/icon_close2.svg");
+  }
+}

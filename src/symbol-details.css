@@ -1,0 +1,112 @@
+.SymbolDetails {
+  --SymbolDetails_BackgroundColor: #fff;
+  --SymbolDetails_Width: 22rem;
+  --SymbolDetails__Buttons_BackgroundColor: #f5f5f5;
+  --SymbolDetails__Buttons_BackgroundColor--Active: #f0f0f0;
+
+  width: var(--SymbolDetails_Width);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: var(--DefaultBorderRadius);
+  background-color: var(--SymbolDetails_BackgroundColor);
+  box-shadow: var(--DefaultBoxShadow);
+  user-select: none;
+
+  margin: 5rem auto 0 auto;
+
+  &__Header {
+    position: relative;
+  }
+  &__Controls {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__Close {
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__SymbolSearch {
+    padding: 0.75rem 0;
+  }
+
+  &__Actions {
+    display: flex;
+    flex-flow: row;
+    justify-content: stretch;
+    font-size: 0.75em;
+  }
+  &__Button {
+    width: 3rem;
+    background-color: var(--SymbolDetails__Buttons_BackgroundColor);
+    padding: 0.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: var(--DefaultBorderRadius);
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background-color: var(--SymbolDetails__Buttons_BackgroundColor--Active);
+    }
+
+    &--Buy {
+      background-color: rgba(83, 212, 108, 0.4);
+      color: rgb(0, 163, 32);
+      &:hover {
+        background-color: rgba(83, 212, 108, 0.6);
+      }
+    }
+    &--Sell {
+      background-color: rgba(255, 78, 64, 0.4);
+      color: rgb(210, 15, 0);
+      &:hover {
+        background-color: rgba(255, 78, 64, 0.6);
+      }
+    }
+  }
+
+  &__Body {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-size: 0.75em;
+  }
+  &__Indicator {
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 0.35rem 0;
+    /* border-bottom: 1px solid var(--SymbolDetails__Buttons_BackgroundColor); */
+
+    &:nth-child(odd) {
+      padding-right: 0.75rem;
+    }
+    &:nth-child(even) {
+      padding-left: 0.75rem;
+    }
+
+    &Name {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &Value {
+      font-weight: 600;
+      font-family: sans-serif;
+      /* margin-top: 0.25rem; */
+      /* text-align: right; */
+    }
+  }
+}

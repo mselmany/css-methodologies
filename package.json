@@ -1,0 +1,32 @@
+{
+  "name": "css-methodologies",
+  "version": "1.0.0",
+  "description": "Yaygın kullanılan CSS Metodolojileri ve Araçları",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mselmany/css-methodologies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mselmany/css-methodologies/issues"
+  },
+  "homepage": "https://github.com/mselmany/css-methodologies#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "parcel-bundler": "^1.11.0",
+    "pleeease-filters": "^4.0.0",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-easing-gradients": "^3.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-url": "^8.0.0",
+    "precss": "^4.0.0",
+    "rucksack-css": "^1.0.2"
+  }
+}
