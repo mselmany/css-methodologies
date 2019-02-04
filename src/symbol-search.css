@@ -3,7 +3,7 @@
   --SymbolSearch_BackgroundColor--Hover: #f5f5f5;
   --SymbolSearch_BackgroundColor--Active: #f0f0f0;
   --SymbolSearch_BackgroundColor--Selected: #e8e8e8;
-  --SymbolSearch_BackgroundColor--Selected-Text: "Gösteriliyor"; */
+  --SymbolSearch--Selected-Text: "Gösteriliyor"; */
 
   width: 100%;
   position: relative;
@@ -63,7 +63,7 @@
       &:after {
         display: none;
 
-        content: var(--SymbolSearch_BackgroundColor--Selected-Text);
+        content: var(--SymbolSearch--Selected-Text);
         position: absolute;
         right: 1rem;
         top: 50%;

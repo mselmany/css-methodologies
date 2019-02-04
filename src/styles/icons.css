@@ -1,4 +1,9 @@
+:root {
+  --Icon_Color: brightness(0) invert(0);
+}
 .Icon {
+  /* --Icon_Color: brightness(0) invert(1); */
+
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -9,16 +14,20 @@
   background-position: center;
   background-size: initial;
   background-size: contain;
+  filter: var(--Icon_Color);
+
   &--interactive {
     cursor: pointer;
     &:hover {
       opacity: 0.5;
     }
   }
-  &--white {
+  &--white,
+  .Icon--white-NOTIFICATION & {
     filter: brightness(0) invert(1);
   }
-  &--black {
+  &--black,
+  .Icon--black-NOTIFICATION & {
     filter: brightness(0) invert(0);
   }
   &--close {
