@@ -1,0 +1,14 @@
+:root {
+}
+.Layout {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__Item {
+    margin: 1rem;
+  }
+}

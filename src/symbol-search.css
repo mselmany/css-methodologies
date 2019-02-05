@@ -1,10 +1,11 @@
-.SymbolSearch {
-  /* --SymbolSearch_BackgroundColor: #f9f9f9;
+:root {
+  --SymbolSearch_BackgroundColor: #f9f9f9;
   --SymbolSearch_BackgroundColor--Hover: #f5f5f5;
   --SymbolSearch_BackgroundColor--Active: #f0f0f0;
   --SymbolSearch_BackgroundColor--Selected: #e8e8e8;
-  --SymbolSearch--Selected-Text: "Gösteriliyor"; */
-
+  --SymbolSearch--Selected-Text: "G?steriliyor";
+}
+.SymbolSearch {
   width: 100%;
   position: relative;
   font-size: 0.75rem;

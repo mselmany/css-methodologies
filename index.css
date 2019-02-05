@@ -4,8 +4,10 @@
 @import url("./src/styles/base.css");
 @import url("./src/styles/icons.css");
 
+@import url("./src/layout.css");
+
 @import url("./src/symbol-details.css");
 @import url("./src/symbol-search.css");
 
-@import url("./src/profiles/a.css");
-@import url("./src/profiles/b.css");
+@import url("./src/profiles/vakif.css");
+@import url("./src/profiles/ziraat.css");

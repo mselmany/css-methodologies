@@ -1,10 +1,12 @@
-.SymbolDetails {
-  /* --SymbolDetails_BackgroundColor: #fff;
+:root {
+  --SymbolDetails_BackgroundColor: #fff;
   --SymbolDetails_Color: #222;
   --SymbolDetails_Width: 22rem;
   --SymbolDetails__Buttons_BackgroundColor: #f5f5f5;
-  --SymbolDetails__Buttons_BackgroundColor--Active: #f0f0f0; */
+  --SymbolDetails__Buttons_BackgroundColor--Active: #f0f0f0;
+}
 
+.SymbolDetails {
   width: var(--SymbolDetails_Width);
   padding: 1rem;
   font-size: 1rem;
@@ -13,8 +15,6 @@
   color: var(--SymbolDetails_Color);
   box-shadow: var(--DefaultBoxShadow);
   user-select: none;
-
-  margin: 5rem auto 0 auto;
 
   &__Header {
     position: relative;
@@ -61,14 +61,14 @@
 
     &--Buy {
       background-color: rgba(83, 212, 108, 0.4);
-      color: rgb(0, 163, 32);
+      color: rgb(0, 140, 32);
       &:hover {
         background-color: rgba(83, 212, 108, 0.6);
       }
     }
     &--Sell {
       background-color: rgba(255, 78, 64, 0.4);
-      color: rgb(210, 15, 0);
+      color: rgb(200, 15, 0);
       &:hover {
         background-color: rgba(255, 78, 64, 0.6);
       }
@@ -107,8 +107,6 @@
     &Value {
       font-weight: 600;
       font-family: sans-serif;
-      /* margin-top: 0.25rem; */
-      /* text-align: right; */
     }
   }
 }
